@@ -111,9 +111,9 @@
       <div id="main-wrapper">
         <div id="main-column">
           <div id="main-body">
-            {{body}}
-            {%- include "partials/related-pages.html" -%}
+            {% block content %}{{ body }}{% endblock %}
           </div>
+          {%- include "partials/related-pages.html" -%}
         </div>
         <div id="toc-column" class="with-scroll">
           {% if not hide_page_toc %}
