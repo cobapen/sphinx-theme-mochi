@@ -32,21 +32,21 @@ sort of site navigation that's necessary for "real" documentation.
     :caption: This is a caption
     :titlesonly:
 
-    doc/placeholder-one
-    doc/placeholder-two
-    doc/really-long-title
-    doc/long-page
+    doc/page/placeholder-one
+    doc/page/placeholder-two
+    doc/page/really-long-title
+    doc/page/long-page
     External Link <https://www.sphinx-doc.org>
 
 .. toctree::
     :hidden:
     :caption: Additional "hidden" Pages
 
-    doc/placeholder-three
-    doc/placeholder-four
+    doc/page/placeholder-three
+    doc/page/placeholder-four
     Sphinx Theme Gallery <https://sphinx-themes.org>
 
-:doc:`doc/placeholder-three` is part of "hidden" toctree. It is not shown above, but do exists.
+:doc:`doc/page/placeholder-three` is part of "hidden" toctree. It is not shown above, but do exists.
 
 Index
 ===========
