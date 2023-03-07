@@ -7,4 +7,3 @@ this is page 1-1
 ..  toctree::
     :maxdepth: 1
 
-    dummy
