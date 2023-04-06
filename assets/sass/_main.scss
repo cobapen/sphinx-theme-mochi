@@ -13,7 +13,11 @@
 
   // this is a workaroud for sticky-header to not to disappear
   // https://stackoverflow.com/questions/46655386/when-css-position-sticky-stops-sticking
-  height: auto; 
+  // 
+  // update2: this style was disabled due to causing div.related-page rendered outside
+  // of the client view
+  // 
+  // height: auto; 
 
   transition: .05s;
   transition-property: margin-left;
@@ -28,7 +32,6 @@
 #main-wrapper {
   display: flex;
   flex-grow: 1;
-  height: 100vh;
   overflow-y: auto;
 }
 
@@ -101,8 +104,9 @@
 
 #main-body {
   flex-grow: 1;
-  padding: 0 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   
+  // note: this style do not work in all browsers.
   height: fit-content;
   overflow-y: visible;
 
@@ -114,7 +118,10 @@
     max-width: calc(100vw - #{$sidebar-width} - 10px);
   }
   @media screen and (max-width: 900px) {
-    padding: 0 .5rem;
+    // for mobile users, make reduce horizontal padding.
+    // also increase padding-bottom to avoid navigation get hidden by the 
+    // navigation bar. this is a workaround solution.
+    padding: 0 .5rem 3rem .5rem;
   }
 }
 
