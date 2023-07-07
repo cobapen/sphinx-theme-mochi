@@ -12,8 +12,8 @@ This section displays a toctree and sub-toctrees
     :maxdepth: 1
     :caption: ToC Tree
 
-    doc/tree/page1
-    doc/tree/page2
+    doc/sample/tree/page1
+    doc/sample/tree/page2
 
 
 Navigation
@@ -32,29 +32,29 @@ sort of site navigation that's necessary for "real" documentation.
     :caption: This is a caption
     :titlesonly:
 
-    doc/page/placeholder-one
-    doc/page/placeholder-two
-    doc/page/really-long-title
-    doc/page/long-page
+    doc/sample/page/placeholder-one
+    doc/sample/page/placeholder-two
+    doc/sample/page/really-long-title
+    doc/sample/page/long-page
     External Link <https://www.sphinx-doc.org>
 
 .. toctree::
     :hidden:
     :caption: Additional "hidden" Pages
 
-    doc/page/placeholder-three
-    doc/page/placeholder-four
+    doc/sample/page/placeholder-three
+    doc/sample/page/placeholder-four
     Sphinx Theme Gallery <https://sphinx-themes.org>
 
-:doc:`doc/page/placeholder-three` is part of "hidden" toctree. It is not shown above, but do exists.
+:doc:`doc/sample/page/placeholder-three` is part of "hidden" toctree. It is not shown above, but do exists.
 
 Index
 ===========
-The :doc:`doc/kitchen-sink/index` section contains pages that contains basically
+The :doc:`doc/sample/kitchen-sink/index` section contains pages that contains basically
 everything that you can with Sphinx "out-of-the-box".
 
 
 .. toctree::
     :titlesonly:
 
-    doc/kitchen-sink/index
+    doc/sample/kitchen-sink/index
