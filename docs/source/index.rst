@@ -1,37 +1,40 @@
 ======================
-sample docs
+sphinx-mochi-theme
 ======================
 
-
-Tree
+About
 ===========
 
-This section displays a toctree and sub-toctrees
+This is a developer's documentation for simple sphinx theme named "sphinx-mochi-theme".
+
+To read how to setup, check this page: :doc:`doc/setup`
+
+For requirements when developing this theme, check this page: :doc:`doc/req`
+
 
 .. toctree::
     :maxdepth: 1
-    :caption: ToC Tree
+    :caption: Index
+
+    doc/setup
+    doc/customize
+    doc/req
+
+Sample
+==========
+
+:doc:`doc/sample/tree/page1` constructs nested pages. The theme should render nested page nicely at the left sidebar.
+
+The :doc:`doc/sample/kitchen-sink/index` section contains pages that contains basically
+everything that you can with Sphinx "out-of-the-box".
+
+.. toctree::
+    :titlesonly:
+    :caption: Sample Pages
 
     doc/sample/tree/page1
     doc/sample/tree/page2
-
-
-Navigation
-==========
-
-This is the most important part of a documentation theme. If you like
-the general look of the theme, please make sure that it is possible to
-easily navigate through this sample documentation.
-
-Ideally, the pages listed below should also be reachable via links
-somewhere else on this page (like the sidebar, or a topbar). If they are
-not, then this theme might need additional configuration to provide the
-sort of site navigation that's necessary for "real" documentation.
-
-.. toctree::
-    :caption: This is a caption
-    :titlesonly:
-
+    doc/sample/kitchen-sink/index
     doc/sample/page/placeholder-one
     doc/sample/page/placeholder-two
     doc/sample/page/really-long-title
@@ -45,16 +48,3 @@ sort of site navigation that's necessary for "real" documentation.
     doc/sample/page/placeholder-three
     doc/sample/page/placeholder-four
     Sphinx Theme Gallery <https://sphinx-themes.org>
-
-:doc:`doc/sample/page/placeholder-three` is part of "hidden" toctree. It is not shown above, but do exists.
-
-Index
-===========
-The :doc:`doc/sample/kitchen-sink/index` section contains pages that contains basically
-everything that you can with Sphinx "out-of-the-box".
-
-
-.. toctree::
-    :titlesonly:
-
-    doc/sample/kitchen-sink/index
