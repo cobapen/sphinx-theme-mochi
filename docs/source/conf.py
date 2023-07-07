@@ -23,12 +23,12 @@ sys.path.insert(0, root_dir)
 
 # -- Project information -----------------------------------------------------
 
-project = 'SampleDocument'
-copyright = '2023, Author'
-author = 'Author'
+project = 'sphinx-mochi-theme'
+copyright = '2023, @Yamavol'
+author = 'Yamavol'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+release = '0.1.0'
 
 
 # -- General configuration ---------------------------------------------------
