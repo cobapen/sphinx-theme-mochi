@@ -642,3 +642,6 @@ input#sidebar-visibility-checkbox {
     display: none; }
   #toc-column {
     display: none !important; } }
+
+p.caption {
+  font-weight: bold; }
