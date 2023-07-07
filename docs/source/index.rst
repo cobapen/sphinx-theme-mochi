@@ -39,6 +39,7 @@ everything that you can with Sphinx "out-of-the-box".
     doc/sample/page/placeholder-two
     doc/sample/page/really-long-title
     doc/sample/page/long-page
+    doc/sample/page/japanese
     External Link <https://www.sphinx-doc.org>
 
 .. toctree::
