@@ -1,4 +1,4 @@
-""" mochi, a plain sphinx theme with solid philosophy and soft design """
+""" mochi, a plain sphinx theme for reliable documentation platform """
 __version__ = "2023.7.7"
 
 import hashlib
