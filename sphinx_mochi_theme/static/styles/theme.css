@@ -187,11 +187,14 @@ dl dt {
 
 ul,
 ol {
-  margin: 0;
-  margin-top: 1em;
+  margin: 1rem 1rem 1rem 0;
   padding-left: 1rem; }
   ul li > p:first-child,
   ol li > p:first-child {
+    margin: 0; }
+  ul ul, ul ol,
+  ol ul,
+  ol ol {
     margin: 0; }
 
 li::marker {
