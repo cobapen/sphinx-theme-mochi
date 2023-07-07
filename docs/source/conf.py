@@ -24,7 +24,7 @@ sys.path.insert(0, root_dir)
 # -- Project information -----------------------------------------------------
 
 project = 'sphinx-mochi-theme'
-copyright = '2023, @Yamavol'
+copyright = '2023, Yamavol'
 author = 'Yamavol'
 
 # The full version, including alpha/beta/rc tags
