@@ -20,6 +20,7 @@ For requirements when developing this theme, check this page: :doc:`doc/req`
     doc/setup
     doc/customize
     doc/req
+    doc/publish
 
 Sample
 ==========

@@ -3,12 +3,12 @@
 
 <head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="検索" href="../search.html" /><link rel="next" title="4. publish"
-    href="publish.html" /><link rel="prev" title="2. Customize"
-    href="customize.html" />
+<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="検索" href="../search.html" /><link rel="next" title="page 1"
+    href="sample/tree/page1.html" /><link rel="prev" title="3. Theme Requirements"
+    href="req.html" />
 
   <link rel="shortcut icon" href="../_static/favicon.ico" /><!-- Generated with Sphinx 7.0.1 and Furo  -->
-  <title>3. Theme Requirements - sphinx-mochi-theme</title>
+  <title>4. publish - sphinx-mochi-theme</title>
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
   <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css" />
   </head>
@@ -52,12 +52,12 @@
 <li class="toctree-l2"><a class="reference internal" href="customize.html#variables-theme-specific">2.2. Variables (theme specific)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">3. Theme Requirements</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="#layout">3.1. Layout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#customization-1">3.2. Customization 1</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="req.html">3. Theme Requirements</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="req.html#layout">3.1. Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="req.html#customization-1">3.2. Customization 1</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="publish.html">4. publish</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">4. publish</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sample Pages</span></p>
 <ul>
@@ -121,61 +121,51 @@
 </i></div><div id="main-wrapper">
         <div id="main-column">
           <div id="main-body">
-            <section id="theme-requirements">
-<h1><span class="section-number">3. </span>Theme Requirements<a class="headerlink" href="#theme-requirements" title="この見出しへのパーマリンク">#</a></h1>
-<p>Guidelines for future development</p>
-<section id="layout">
-<h2><span class="section-number">3.1. </span>Layout<a class="headerlink" href="#layout" title="この見出しへのパーマリンク">#</a></h2>
-<p>-- The theme must have 3 columns, when the width is wide enough.</p>
-<p>-- The theme must show 2 columns, when the width is shorter</p>
-<p>-- For mobile, the theme must show 1 columns, and it must be navigatable</p>
-<p>-- The theme should provide good document readability in any circumstances.</p>
-</section>
-<section id="customization-1">
-<h2><span class="section-number">3.2. </span>Customization 1<a class="headerlink" href="#customization-1" title="この見出しへのパーマリンク">#</a></h2>
-<p>-- The theme should use the sphinx-defined basic configuration options, as listed in this link:<br />
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output">https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output</a></p>
-<p>Some important options</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>config key</p></th>
-<th class="head"><p>explanation</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code></p></td>
-<td><p>dictionary for theme-specific options.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">html_theme_path</span></code></p></td>
-<td><p>this theme cannot be loaded with this option, since initialization script will not run.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">html_title</span></code></p></td>
-<td><p>the title for HTML documentation. Defaults to '&lt;project&gt;v&lt;revision&gt; documentation'</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">html_short_title</span></code></p></td>
-<td><p>a shorter title . If not given, defaults to <code class="docutils literal notranslate"><span class="pre">html_title</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">html_baseurl</span></code></p></td>
-<td><p>base url which points to the root of HTML documentation. Defaults to ''</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">html_logo</span></code></p></td>
-<td><p>path (or URL) to the image file. path is relative to config dir. good to use <code class="docutils literal notranslate"><span class="pre">_static</span></code> as Sphinx copies the image file to the _static directory if not exists</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">html_favicon</span></code></p></td>
-<td><p>path (or URL) to the favicon file.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">html_css_files</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">html_js_files</span></code></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-</section>
+            <section id="publish">
+<h1><span class="section-number">4. </span>publish<a class="headerlink" href="#publish" title="この見出しへのパーマリンク">#</a></h1>
+<p>create ~/.pypirc. If you do not use testpypi, this phase may be skipped.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># .pypirc</span>
+<span class="o">[</span>distutils<span class="o">]</span>
+index-servers<span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">  </span>pypi
+<span class="w">  </span>testpypi
+
+<span class="o">[</span>pypi<span class="o">]</span>
+<span class="nv">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>https://upload.pypi.org/legacy/
+<span class="nv">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>username
+
+<span class="o">[</span>testpypi<span class="o">]</span>
+<span class="nv">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>https://test.pypi.org/legacy/
+<span class="nv">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>username
+</pre></div>
+</div>
+<p>check <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build-system]</span>
+<span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;flit_core &gt;=3.2,&lt;4&quot;</span><span class="p">]</span>
+<span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;flit_core.buildapi&quot;</span>
+
+<span class="k">[project]</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sphinx_mochi_theme&quot;</span>
+<span class="p">...</span>
+</pre></div>
+</div>
+<p>update <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> to change version and description.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#__init__.py</span>
+
+<span class="sd">&quot;&quot;&quot;package description&quot;&quot;&quot;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;2023.7.7&quot;</span>
+</pre></div>
+</div>
+<p>commit all local changes, then execute publish command with flit. make sure to ignore <code class="docutils literal notranslate"><span class="pre">/dist</span></code> if not yet done.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>flit<span class="w"> </span>publish
+
+flit<span class="w"> </span>publish<span class="w"> </span>--repository<span class="w"> </span>testpypi<span class="w"> </span><span class="c1"># optional</span>
+flit<span class="w"> </span>build<span class="w"> </span><span class="c1"># build test</span>
+</pre></div>
+</div>
 </section>
 <div class="related-pages">
-  <a class="prev-page" href="customize.html">
+  <a class="prev-page" href="req.html">
     <svg class="related-icon">
       <use href="#svg-arrow-right"></use>
     </svg>
@@ -184,17 +174,17 @@
         <span>Previous</span>
       </div>
       
-      <div class="title"><span class="section-number">2. </span>Customize</div>
+      <div class="title"><span class="section-number">3. </span>Theme Requirements</div>
       
     </div>
   </a>
   <div class="spacer"></div>
-  <a class="next-page" href="publish.html">
+  <a class="next-page" href="sample/tree/page1.html">
     <div class="page-info">
       <div class="context">
         <span>Next</span>
       </div>
-      <div class="title"><span class="section-number">4. </span>publish</div>
+      <div class="title">page 1</div>
     </div>
     <svg class="related-icon">
       <use href="#svg-arrow-right"></use>
@@ -203,17 +193,6 @@
 </div></div>
         </div>
         <div id="toc-column" class="with-scroll">
-          
-          <div id="page-toc" class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">3. Theme Requirements</a><ul>
-<li><a class="reference internal" href="#layout">3.1. Layout</a></li>
-<li><a class="reference internal" href="#customization-1">3.2. Customization 1</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
           
         </div>
       </div>
