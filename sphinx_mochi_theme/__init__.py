@@ -68,8 +68,8 @@ def _get_navigation_expand_image(soup: bs) -> Tag:
 lru_cache(maxsize=None)
 def _create_sidebar_toc(toctree_html: str) -> str:
     """
-    add custom styles to toctree_html so it can be stylized. this function
-    also appends label tag to provide open/collapse button
+    add custom styles to toctree_html so it can be stylized. 
+    this function also appends label tag to provide open/collapse button
     """
     if not toctree_html:
         return toctree_html
