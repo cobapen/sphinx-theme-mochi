@@ -5,3 +5,6 @@
 </p>
 
 sphinx-mochi-theme is a simple sphinx theme for general use.
+
+Documentation: https://cobapen.github.io/sphinx-mochi-theme
+
