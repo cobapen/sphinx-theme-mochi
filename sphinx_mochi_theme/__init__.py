@@ -20,6 +20,41 @@ def _inspect(item):
     _ = item
     pass
 
+def _get_theme_var_bool(context: Ctx, key: str, fallback: bool = False) -> bool:
+    try:
+        value: str = context[key]
+
+        if type(value) != str:
+            return fallback
+        
+        value = value.strip().lower()
+        if value == 'true':
+            return True
+        elif value == 'false':
+            return False
+        elif value == '1':
+            return True
+        elif value == '0':
+            return False
+        else:
+            return fallback
+    except:
+        return fallback
+
+
+def _get_theme_var_int(context: Ctx, key: str, fallback: int = 0) -> int:
+    try:
+        value: str = context[key]
+
+        if type(value) != str:
+            return fallback
+        
+        return int(value)
+    except:
+        fallback
+
+
+
 def _get_navigation_expand_image(soup: bs) -> Tag:
     retval = soup.new_tag("i", attrs={"class": "icon"})
 
@@ -98,10 +133,14 @@ def _get_full_toctree(context: Ctx) -> str:
 
     if "toctree" in context:
         fn_toctree = context["toctree"]
+
+        titles_only = _get_theme_var_bool(context, 'theme_mochi_navtree_titlesonly', False)
+        maxdepth = _get_theme_var_int(context, 'theme_mochi_navtree_maxdepth', -1)
+
         toctree_html = fn_toctree(
             collapse=False,
-            titles_only=True,
-            maxdepth=-1,
+            titles_only=titles_only,
+            maxdepth=maxdepth,
             includehidden=True
         )
     else:
