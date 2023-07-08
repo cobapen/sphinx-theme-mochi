@@ -18,9 +18,14 @@ classifiers = [
   "Topic :: Documentation",
   "Topic :: Software Development :: Documentation",
 ]
+dependencies = [
+  "sphinx >= 4.2",
+  "beautifulsoup4",
+]
 
 [project.urls]
-Home = "https://github.com/cobapen/sphinx-mochi-theme"
+Home = "https://cobapen.github.io/sphinx-mochi-theme"
+Source = "https://github.com/cobapen/sphinx-mochi-theme"
 
 [project.entry-points]
 "sphinx.html_themes" = { sphinx_mochi_theme = "sphinx_mochi_theme" }
