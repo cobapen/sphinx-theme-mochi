@@ -1,5 +1,5 @@
-""" mochi, a plain sphinx theme for reliable documentation platform """
-__version__ = "2023.7.7"
+""" mochi, a plain sphinx theme for steady documentation platform """
+__version__ = "2023.7.8"
 
 import hashlib
 import logging
