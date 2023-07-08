@@ -12,9 +12,10 @@ To read how to setup, check this page: :doc:`doc/setup`
 For requirements when developing this theme, check this page: :doc:`doc/req`
 
 
-.. toctree::
-    :maxdepth: 1
+..  toctree::
+    :maxdepth: 2
     :caption: Index
+    :numbered:
 
     doc/setup
     doc/customize
@@ -23,12 +24,12 @@ For requirements when developing this theme, check this page: :doc:`doc/req`
 Sample
 ==========
 
-:doc:`doc/sample/tree/page1` constructs nested pages. The theme should render nested page nicely at the left sidebar.
+Tree pages (:doc:`doc/sample/tree/page1`) constructs nested navtree. 
 
 The :doc:`doc/sample/kitchen-sink/index` section contains pages that contains basically
 everything that you can with Sphinx "out-of-the-box".
 
-.. toctree::
+..  toctree::
     :titlesonly:
     :caption: Sample Pages
 
