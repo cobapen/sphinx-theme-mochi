@@ -4,7 +4,7 @@ page 1-2-2
 
 this is page 1-2-2
 
-.. toctree::
+..  toctree::
     :maxdepth: 1
 
     page1-2-2-1

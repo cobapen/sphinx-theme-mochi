@@ -5,49 +5,43 @@ sphinx-mochi-theme
 About
 ===========
 
-This is a developer's documentation for simple sphinx theme named "sphinx-mochi-theme".
+This is a developer's documentation for **sphinx-mochi-theme**
 
-To read how to setup, check this page: :doc:`doc/setup`
+For users: :doc:`Pages/index`
 
-For requirements when developing this theme, check this page: :doc:`doc/req`
-
+For developers: :doc:`Develop/index`
 
 ..  toctree::
-    :maxdepth: 2
     :caption: Index
+    :maxdepth: 1
+    :hidden:
     :numbered:
 
-    doc/setup
-    doc/customize
-    doc/req
-    doc/publish
+    Pages/index.rst
+    Develop/index.rst
+
 
 Sample
 ==========
 
-Tree pages (:doc:`doc/sample/tree/page1`) constructs nested navtree. 
+Tree pages (:doc:`Sample/tree/page1`) constructs a nested navtree. 
 
-The :doc:`doc/sample/kitchen-sink/index` section contains pages that contains basically
-everything that you can with Sphinx "out-of-the-box".
+The :doc:`Sample/kitchen-sink/index` section contains pages that contains basically everything that you can with Sphinx "out-of-the-box".
 
 ..  toctree::
     :titlesonly:
+    :hidden:
     :caption: Sample Pages
 
-    doc/sample/tree/page1
-    doc/sample/tree/page2
-    doc/sample/kitchen-sink/index
-    doc/sample/page/placeholder-one
-    doc/sample/page/placeholder-two
-    doc/sample/page/really-long-title
-    doc/sample/page/long-page
-    doc/sample/page/japanese
+    Sample/tree/page1
+    Sample/tree/page2
+    Sample/kitchen-sink/index
+    Sample/page/placeholder-one
+    Sample/page/placeholder-two
+    Sample/page/really-long-title
+    Sample/page/long-page
+    Sample/page/japanese
     External Link <https://www.sphinx-doc.org>
-
-.. toctree::
-    :hidden:
-    :caption: Additional "hidden" Pages
-
-    doc/sample/page/placeholder-three
-    doc/sample/page/placeholder-four
+    Sample/page/placeholder-three
+    Sample/page/placeholder-four
     Sphinx Theme Gallery <https://sphinx-themes.org>

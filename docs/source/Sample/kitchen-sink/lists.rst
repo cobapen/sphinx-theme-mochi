@@ -199,7 +199,7 @@ Second list level
 
       heh heh. child. try to beat this embed:
 
-      .. literalinclude:: ../../../conf.py
+      .. literalinclude:: ../../conf.py
           :language: python
           :linenos:
           :lines: 10-20

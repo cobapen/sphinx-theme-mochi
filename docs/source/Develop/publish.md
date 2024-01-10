@@ -1,6 +1,8 @@
 # publish
 
-create ~/.pypirc. If you do not use testpypi, this phase may be skipped.
+This project uses **flit** for deployment. Install it first.
+
+create ~/.pypirc. (If you do not use testpypi, this phase may be skipped)
 
 ```sh
 # .pypirc
