@@ -85,7 +85,7 @@ mathjax_path = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
 ## https://www.sphinx-doc.org/en/master/usage/configuration.html
 html_title = f"{project}"
 html_baseurl = ""
-html_logo = '_static/mochi.png'
+html_logo = '_static/logo.png'
 html_favicon = '_static/favicon.ico'
 # html_css_files = ''
 # html_js_files = ''
