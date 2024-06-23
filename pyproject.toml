@@ -2,8 +2,12 @@
 requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
-[project]
+[tool.flit.module]
 name = "sphinx_mochi_theme"
+
+
+[project]
+name = "sphinx-mochi-theme"
 authors = [{name = "yamavol"}]
 readme = "README.md"
 license = {file = "LICENSE"}
