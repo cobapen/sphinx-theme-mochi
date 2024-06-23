@@ -25,5 +25,5 @@ API documentation
         # Don't show class signature with the class' name.
         autodoc_class_signature = "separated"
 
-.. automodule:: urllib.parse
+.. automodule:: gzip
     :members:
