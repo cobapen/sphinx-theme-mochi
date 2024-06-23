@@ -1,4 +1,4 @@
-# publish
+# Publish
 
 This project uses **flit** for deployment. Install it first.
 
@@ -38,7 +38,7 @@ update `__init__.py` to change version and description.
 #__init__.py
 
 """package description"""
-__version__ = "2023.7.7"
+__version__ = "0.1.0"
 ```
 
 commit all local changes, then execute publish command with flit. make sure to ignore `/dist` if not yet done.

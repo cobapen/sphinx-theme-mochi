@@ -6,8 +6,9 @@ User's Manual
 Other than its simplicity, the theme provides an improved navigation in the left pane, and a header-list in the right pane. The reader can easily jump to the article, if the documents are structured well.
 
 ..  toctree::
-    :maxdepth: 1
+    :maxdepth: 2
+    :titlesonly:
     
     setup.md
     customize.md
-    
+    usage.md

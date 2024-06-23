@@ -7,7 +7,7 @@ About
 
 This is a developer's documentation for **sphinx-mochi-theme**
 
-For users: :doc:`Pages/index`
+For theme users: :doc:`Pages/index`
 
 For developers: :doc:`Develop/index`
 
@@ -15,6 +15,7 @@ For developers: :doc:`Develop/index`
     :caption: Index
     :maxdepth: 1
     :hidden:
+    :titlesonly:
     :numbered:
 
     Pages/index.rst
@@ -41,7 +42,8 @@ The :doc:`Sample/kitchen-sink/index` section contains pages that contains basica
     Sample/page/really-long-title
     Sample/page/long-page
     Sample/page/japanese
-    External Link <https://www.sphinx-doc.org>
     Sample/page/placeholder-three
     Sample/page/placeholder-four
+    Sample/eval/index
+    External Link <https://www.sphinx-doc.org>
     Sphinx Theme Gallery <https://sphinx-themes.org>
