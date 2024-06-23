@@ -1,6 +1,6 @@
 # Customize
 
-Edit `conf.py` to customize
+Edit `conf.py` to customize the theme
 
 ## Variables
 
@@ -26,8 +26,3 @@ html_logo = '_static/logo.png'
 html_favicon = '_static/favicon.ico'
 html_permalinks_icon = '#'
 ```
-
-## Note
-
-Note: The content of the left navtree is generated from the `.toctree::` directive in your rst file. Thus, if you omit the documents there, (for example if you used `:titlesonly:` or `:maxdepth: 1`) the subdocuments will never appear in the navtree, regardless of the theme options.
-
