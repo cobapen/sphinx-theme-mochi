@@ -23,7 +23,7 @@ sys.path.insert(0, root_dir)
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx-mochi-theme'
+project = 'sphinx-theme-mochi'
 copyright = '2023, Yamavol'
 author = 'Yamavol'
 
@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'myst_parser',
-    'sphinx_mochi_theme',
+    'sphinx_theme_mochi',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -69,7 +69,7 @@ exclude_patterns = [
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_mochi_theme'
+html_theme = 'sphinx_theme_mochi'
 html_theme_path = ['../../']
 
 # Add any paths that contain custom static files (such as style sheets) here,

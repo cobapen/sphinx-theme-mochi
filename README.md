@@ -1,10 +1,6 @@
-# sphinx-mochi-theme
+# sphinx-theme-mochi
 
-<p align="center">
-  <img src="https://github.com/cobapen/sphinx-mochi-theme/blob/master/docs/source/_static/logo.png" />
-</p>
+sphinx-theme-mochi is a plain sphinx theme.
 
-sphinx-mochi-theme is a simple sphinx theme for general use.
-
-Documentation: https://cobapen.github.io/sphinx-mochi-theme
+Documentation: https://cobapen.github.io/sphinx-theme-mochi
 

@@ -1,11 +1,11 @@
 ======================
-sphinx-mochi-theme
+sphinx-theme-mochi
 ======================
 
 About
 ===========
 
-This is a developer's documentation for **sphinx-mochi-theme**
+This is a developer's documentation for **sphinx-theme-mochi**
 
 For theme users: :doc:`Pages/index`
 

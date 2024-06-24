@@ -1,13 +1,13 @@
 {
-  "name": "sphinx-mochi-theme",
+  "name": "sphinx-theme-mochi",
   "version": "0.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "build": "npm run build:sass",
     "build:script": "rollup -c",
-    "build:sass": "sass assets/sass/theme.scss sphinx_mochi_theme/static/styles/theme.css ",
-    "watch:sass": "sass -w assets/sass/theme.scss sphinx_mochi_theme/static/styles/theme.css",
+    "build:sass": "sass assets/sass/theme.scss sphinx_theme_mochi/static/styles/theme.css ",
+    "watch:sass": "sass -w assets/sass/theme.scss sphinx_theme_mochi/static/styles/theme.css",
     "watch:sass:dev": "sass -w assets/sass/theme.scss docs/build/html/_static/styles/theme.css",
     "tsc": "echo \"TBD\"",
     "fmt": "prettier --write ./src"

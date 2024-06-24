@@ -178,7 +178,7 @@ def on_html_page_context(app: Sphinx, pagename: str, templatename: str, context:
     context["hide_page_toc"] = _should_hide_page_toc(context, builder=app.builder, docname=pagename)
 
 def setup(app: Sphinx) -> Dict[str, Any]:
-    app.add_html_theme("sphinx_mochi_theme", path.abspath(path.dirname(__file__)))
+    app.add_html_theme("sphinx_theme_mochi", path.abspath(path.dirname(__file__)))
     app.connect('html-page-context', on_html_page_context)
 
     return {}

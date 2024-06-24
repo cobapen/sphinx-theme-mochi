@@ -28,7 +28,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "sphinx_mochi_theme"
+name = "sphinx_theme_mochi"
 ...
 ```
 
