@@ -1,7 +1,7 @@
 
 # Usage
 
-Sphinx-mochi-theme is a static theme with a python script bundled. The usage should be straightforward.
+Sphinx-theme-mochi is a static theme with a python script bundled. The usage should be straightforward.
 
 ## Foldable navtree
 

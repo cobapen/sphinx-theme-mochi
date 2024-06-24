@@ -12,7 +12,7 @@ Install sphinx and the theme
 
 ```sh
 python -m pip install sphinx
-python -m pip install sphinx_mochi_theme
+python -m pip install sphinx_theme_mochi
 ```
 
 Create the new project
@@ -25,7 +25,7 @@ Edit conf.py
 
 ```py
 # conf.py
-html_theme = 'sphinx_mochi_theme'  #changed
+html_theme = 'sphinx_theme_mochi'  #changed
 ```
 
 Add theme package to the extensions list
@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'myst_parser',
-    'sphinx_mochi_theme',   # this
+    'sphinx_theme_mochi',   # this
 ]
 ```
 
