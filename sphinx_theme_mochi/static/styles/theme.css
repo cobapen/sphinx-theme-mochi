@@ -218,7 +218,9 @@ span.linenos {
 }
 
 p,
-pre {
+pre,
+blockquote,
+div.highlight {
   max-width: var(--paragraph-width);
   font-size: 0.9rem;
 }
