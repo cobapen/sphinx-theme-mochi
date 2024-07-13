@@ -15,3 +15,7 @@ It has exactly one goal: to be a good checklist of things to stylise within Sphi
     :glob:
 
     *
+
+.. admonition:: Appreciation
+
+    This section is adopted from the `sphinx-themes.org <https://github.com/sphinx-themes/sphinx-themes.org>`_ with some local modifications.
