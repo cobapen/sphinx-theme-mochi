@@ -297,6 +297,7 @@ table th p {
   margin: 0;
 }
 table td {
+  padding: 0 0.5rem;
   border: solid 1px #ccc;
 }
 
