@@ -51,7 +51,7 @@ def _get_theme_var_int(context: Ctx, key: str, fallback: int = 0) -> int:
         
         return int(value)
     except:
-        fallback
+        return fallback
 
 
 
