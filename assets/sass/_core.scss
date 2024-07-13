@@ -1,12 +1,11 @@
 @charset "utf-8";
 
 $white: #ffffff;
-// width of left-sidebar (Default: 260px)
-$sidebar-width: 260px;
-// width of right-sidebar (Default: 260px)
-$toc-width: 260px;
-// max-width of center-column (main-area)
-$main-width: 920px;
+
+$sidebar-width: 260px;    // width of left-sidebar (Default: 260px)
+$toc-width: 260px;        // width of right-sidebar (Default: 260px)
+$main-width: 920px;       // max-width of center-column (main-area)
+
 $col2-bp: $sidebar-width + $main-width;
 $col3-bp: $sidebar-width + $main-width + $toc-width + 40px;
 
