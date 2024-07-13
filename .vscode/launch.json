@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Debug: sphinx build",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "sphinx",
             "args": ["-b", "html", "source", "build/html", "-a", "-T", "-E"],
