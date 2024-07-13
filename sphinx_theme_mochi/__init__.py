@@ -14,6 +14,7 @@ from typing import Dict, Any
 
 Ctx = Dict[str, Any]
 
+lru_cache(maxsize=None)
 
 def _inspect(item):
     """ set breakpoint here and inspect any item passed from jinja"""
@@ -65,7 +66,6 @@ def _get_navigation_expand_image(soup: bs) -> Tag:
     retval.append(svg_element)
     return retval
 
-lru_cache(maxsize=None)
 def _create_sidebar_toc(toctree_html: str) -> str:
     """
     add custom styles to toctree_html so it can be stylized. 
