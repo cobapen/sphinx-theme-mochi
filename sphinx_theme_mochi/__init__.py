@@ -1,9 +1,6 @@
 """ a simple, plain, solid sphinx theme """
 __version__ = "0.1.0"
 
-import hashlib
-import logging
-import os
 from os import path
 from bs4 import BeautifulSoup as bs, Tag
 from sphinx.application import Sphinx
