@@ -218,7 +218,9 @@ span.linenos {
 }
 
 p,
-pre {
+pre,
+blockquote,
+div.highlight {
   max-width: var(--paragraph-width);
   font-size: 0.9rem;
 }
@@ -295,6 +297,7 @@ table th p {
   margin: 0;
 }
 table td {
+  padding: 0 0.5rem;
   border: solid 1px #ccc;
 }
 
