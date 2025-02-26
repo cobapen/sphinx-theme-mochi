@@ -15,9 +15,11 @@
 
 ## Directives
 
+`.. toctree::` is a directive to build a toctree-cache and render toc in the page. The contents of sidebar navtree is generated from this toctree. It is advised to understand this directive.
+
 **caption (Text)**
 
-Set the title of the toctree. Title is printed above the toc (both page and navtree).
+Sets the title of the toctree. The title is printed above the toc (effective for both page and navtree). The title of nested toctree is ignored in the sidebar navigation. 
 
 **numbered**
 
@@ -27,9 +29,9 @@ Add chapter numbers to each section.
 
 For each subdocuments, only the top level header is included in the toctree, and all subsections are ignored. 
 
-Set this flag if you prefer simpler navtree (no subsections listed!). Don't set this flag if you want a complete list of headers.
+Set this flag if you prefer simpler navtree. (No subsections listed, effective for both page and navtree). Do not set this flag if you want a complete list of headers.
 
-The `:titlesonly:` option must be used with care. When this option is set, The navtree becomes simple and looks better, but you will lose the complete toctree info. It also have the risk of having clumsy navtree. The nested toctrees inside the subsections are still discovered and merged to the parent. Avoid parent toctree with `:titlesonly:` + nested toctree directive in subsection. 
+The nested toctrees inside the subsections are still discovered and merged to the parent. 
 
 **maxdepth (N)**
 
@@ -45,8 +47,6 @@ Hides this toctree from the page. This flag is ignored in the navtree.
 See [official documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree) for more. 
 
 
-## Multiple TocTree
-
-By defining toctree multiple times, all contents are added to the sidebar navtree. 
-
-Although this is useful, multiple toctree results in strage output when you use non-HTML output. 
+```{note}
+Multiple toctrees are all included in the sidebar navtrees. However multiple toctree results in strage output when you use non-HTML output. 
+```

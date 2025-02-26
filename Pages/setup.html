@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="検索" href="../search.html" /><link rel="next" title="1.2. Customize"
-    href="customize.html" /><link rel="prev" title="1. User&#39;s Manual"
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="1.2. Customize"
+    href="customize.html" /><link rel="prev" title="1. User’s Manual"
     href="index.html" />
 
-  <link rel="shortcut icon" href="../_static/favicon.ico" /><!-- Generated with Sphinx 7.3.7 -->
+  <link rel="shortcut icon" href="../_static/favicon.ico" /><!-- Generated with Sphinx 8.1.3 -->
   <title>1.1. Setup - sphinx-theme-mochi</title>
-  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-  <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css?v=1e0347d5" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+  <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css?v=fcbd36f6" />
   </head>
 
 <body>
@@ -36,7 +36,7 @@
     <svg><use href="#svg-search"/></svg>
   </i>
   <form class="sidebar-search-form" method="get" action="../search.html" role="search">
-    <input class="sidebar-search" placeholder="検索" name="q" aria-label="検索">
+    <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
     <input type="hidden" name="check_keywords" value="yes">
     <input type="hidden" name="area" value="default">
   </form>
@@ -46,7 +46,7 @@
         <div id="sidebar-navtree" class="toc-tree">
           <p class="caption" role="heading"><span class="caption-text">Index</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">1. User's Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">1. User’s Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">1.1. Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="customize.html">1.2. Customize</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="usage.html">1.3. Usage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Develop/index.html">2. Developer's Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Develop/index.html">2. Developer’s Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Develop/overview.html">2.1. About</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Develop/publish.html">2.2. Publish</a></li>
 </ul>
@@ -161,32 +161,32 @@
 <h1><span class="section-number">1.1. </span>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h1>
 <section id="instruction">
 <h2><span class="section-number">1.1.1. </span>Instruction<a class="headerlink" href="#instruction" title="Link to this heading">#</a></h2>
-<p>Install the theme and its dependencies.</p>
 <p><strong>Requirements</strong></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Python &gt; 3.8
 </pre></div>
 </div>
-<p>Install sphinx and the theme</p>
+<p><strong>Installation</strong></p>
+<p>Install the theme</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx_theme_mochi
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx-theme-mochi
 </pre></div>
 </div>
-<p>Create the new project</p>
+<p>Create a new project</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart<span class="w"> </span>.
 </pre></div>
 </div>
-<p>Edit conf.py</p>
+<p>Edit conf.py to change the theme</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_theme_mochi&#39;</span>  <span class="c1">#changed</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_theme_mochi&#39;</span>
 </pre></div>
 </div>
-<p>Add theme package to the extensions list</p>
+<p>Add the theme to the list of extensions.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
     <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
     <span class="s1">&#39;sphinx.ext.mathjax&#39;</span><span class="p">,</span>
     <span class="s1">&#39;myst_parser&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;sphinx_theme_mochi&#39;</span><span class="p">,</span>   <span class="c1"># this</span>
+    <span class="s1">&#39;sphinx_theme_mochi&#39;</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -195,32 +195,33 @@ python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </sp
 <h2><span class="section-number">1.1.2. </span>Recommended Tools<a class="headerlink" href="#recommended-tools" title="Link to this heading">#</a></h2>
 <section id="build-automation">
 <h3><span class="section-number">1.1.2.1. </span>build automation<a class="headerlink" href="#build-automation" title="Link to this heading">#</a></h3>
+<p>sphinx-autobuild watches local files and rebuilds the document when changed.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx-autobuild
 </pre></div>
 </div>
-<p>run, then open the browser (defaults to localhost:8000)</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sphinx-autobuild<span class="w"> </span>-E<span class="w"> </span>&lt;source&gt;<span class="w"> </span>&lt;build/html&gt;
+<p>run, then open the browser to preview (defaults to localhost:8000)</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sphinx-autobuild<span class="w"> </span>&lt;source&gt;<span class="w"> </span>&lt;build/html&gt;<span class="w"> </span>-E
 <span class="c1"># -E: fresh build (no-cache)</span>
 </pre></div>
 </div>
 </section>
 <section id="markdown">
 <h3><span class="section-number">1.1.2.2. </span>markdown<a class="headerlink" href="#markdown" title="Link to this heading">#</a></h3>
-<p>Install the markdown parser, and add to the extensions list.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># markdown parser</span>
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>myst_parser
+<p>Add a markdown parser in the list of extensions for markdown syntax support.
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/markdown.html">MyST-parser</a> is a parser designed for Sphinx (and Docutils).</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>myst_parser
 </pre></div>
 </div>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;myst_parser&#39;</span><span class="p">,</span>          <span class="c1"># this</span>
+    <span class="s1">&#39;myst_parser&#39;</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
 </div>
 </section>
 <section id="mathjax">
 <h3><span class="section-number">1.1.2.3. </span>mathjax<a class="headerlink" href="#mathjax" title="Link to this heading">#</a></h3>
-<p>(TBD)</p>
-<p>Edit conf.py to set <code class="docutils literal notranslate"><span class="pre">mathjax_path</span></code> to the javascript URL.</p>
+<p>Sphinx has math equation support for both html/non-html. For html output, sphinx can use image-renderer or mathjax-renderer for math rendering.</p>
+<p>To use mathjax renderer, add the mathjax extension to the extensions list, and set <code class="docutils literal notranslate"><span class="pre">mathjax_path</span></code> to the script. See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax">Official docs</a> for details.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1">#conf.py</span>
 <span class="n">mathjax_path</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#39;</span>
 </pre></div>
@@ -242,7 +243,7 @@ python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </sp
         <span>Previous</span>
       </div>
       
-      <div class="title"><span class="section-number">1. </span>User's Manual</div>
+      <div class="title"><span class="section-number">1. </span>User’s Manual</div>
       
     </div>
   </a>
@@ -306,10 +307,9 @@ python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </sp
     </svg>
   </symbol>
 </svg></div>
-  </div><script src="../_static/documentation_options.js?v=98e9f989"></script>
-  <script src="../_static/doctools.js?v=9a2dae69"></script>
+  </div><script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=9bcbadda"></script>
   <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-  <script src="../_static/translations.js?v=4dbe4bdc"></script>
   </body>
 
 </html>

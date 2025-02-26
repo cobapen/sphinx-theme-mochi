@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="検索" href="../../search.html" /><link rel="next" title="Blocks"
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Blocks"
     href="blocks.html" /><link rel="prev" title="Admonitions"
     href="admonitions.html" />
 
-  <link rel="shortcut icon" href="../../_static/favicon.ico" /><!-- Generated with Sphinx 7.3.7 -->
+  <link rel="shortcut icon" href="../../_static/favicon.ico" /><!-- Generated with Sphinx 8.1.3 -->
   <title>API documentation - sphinx-theme-mochi</title>
-  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
-  <link rel="stylesheet" type="text/css" href="../../_static/styles/theme.css?v=1e0347d5" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+  <link rel="stylesheet" type="text/css" href="../../_static/styles/theme.css?v=fcbd36f6" />
   </head>
 
 <body>
@@ -36,7 +36,7 @@
     <svg><use href="#svg-search"/></svg>
   </i>
   <form class="sidebar-search-form" method="get" action="../../search.html" role="search">
-    <input class="sidebar-search" placeholder="検索" name="q" aria-label="検索">
+    <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
     <input type="hidden" name="check_keywords" value="yes">
     <input type="hidden" name="area" value="default">
   </form>
@@ -46,7 +46,7 @@
         <div id="sidebar-navtree" class="toc-tree">
           <p class="caption" role="heading"><span class="caption-text">Index</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../Pages/index.html">1. User's Manual</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Pages/index.html">1. User’s Manual</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Pages/setup.html">1.1. Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Pages/customize.html">1.2. Customize</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../Pages/usage.html">1.3. Usage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../Develop/index.html">2. Developer's Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Develop/index.html">2. Developer’s Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Develop/overview.html">2.1. About</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Develop/publish.html">2.2. Publish</a></li>
 </ul>
@@ -176,7 +176,7 @@ by setting the following options:</p>
 </div>
 </div>
 <p id="module-gzip">Functions that read and write gzipped files.</p>
-<p>The user of the file doesn't have to worry about the compression,
+<p>The user of the file doesn’t have to worry about the compression,
 but random access is not allowed.</p>
 <dl class="py exception">
 <dt class="sig sig-object py" id="gzip.BadGzipFile">
@@ -201,9 +201,9 @@ compressed file in text mode, use the gzip.open() function.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="gzip.GzipFile.fileno">
 <span class="sig-name descname"><span class="pre">fileno</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gzip.GzipFile.fileno" title="Link to this definition">#</a></dt>
-<dd><p>Invoke the underlying file object's fileno() method.</p>
+<dd><p>Invoke the underlying file object’s fileno() method.</p>
 <p>This will raise AttributeError if the underlying file object
-doesn't support fileno().</p>
+doesn’t support fileno().</p>
 </dd></dl>
 
 <dl class="py method">
@@ -226,7 +226,7 @@ doesn't support fileno().</p>
 <p>If the argument is omitted, None, or negative, reads and
 returns all data until EOF.</p>
 <p>If the argument is positive, and the underlying raw stream is
-not 'interactive', multiple raw reads may be issued to satisfy
+not ‘interactive’, multiple raw reads may be issued to satisfy
 the byte count (unless EOF is reached first).  But for
 interactive raw streams (as well as sockets and pipes), at most
 one raw read will be issued, and a short result does not imply
@@ -240,7 +240,7 @@ mode and no data is available at the moment.</p>
 <dt class="sig sig-object py" id="gzip.GzipFile.read1">
 <span class="sig-name descname"><span class="pre">read1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gzip.GzipFile.read1" title="Link to this definition">#</a></dt>
 <dd><p>Implements BufferedIOBase.read1()</p>
-<p>Reads up to a buffer's worth of data if size is negative.</p>
+<p>Reads up to a buffer’s worth of data if size is negative.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -255,7 +255,7 @@ mode and no data is available at the moment.</p>
 <span class="sig-name descname"><span class="pre">readline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gzip.GzipFile.readline" title="Link to this definition">#</a></dt>
 <dd><p>Read and return a line from the stream.</p>
 <p>If size is specified, at most size bytes will be read.</p>
-<p>The line terminator is always b'n' for binary files; for text
+<p>The line terminator is always b’n’ for binary files; for text
 files, the newlines argument to open can be used to select the line
 terminator(s) recognized.</p>
 </dd></dl>
@@ -275,9 +275,9 @@ beginning of the file</p>
 interpreted relative to the position indicated by whence.  Values
 for whence are:</p>
 <ul class="simple">
-<li><p>0 -- start of stream (the default); offset should be zero or positive</p></li>
-<li><p>1 -- current stream position; offset may be negative</p></li>
-<li><p>2 -- end of stream; offset is usually negative</p></li>
+<li><p>0 – start of stream (the default); offset should be zero or positive</p></li>
+<li><p>1 – current stream position; offset may be negative</p></li>
+<li><p>2 – end of stream; offset is usually negative</p></li>
 </ul>
 <p>Return the new absolute position.</p>
 </dd></dl>
@@ -329,9 +329,9 @@ Return the decompressed string.</p>
 <dd><p>Open a gzip-compressed file in binary or text mode.</p>
 <p>The filename argument can be an actual filename (a str or bytes object), or
 an existing file object to read from or write to.</p>
-<p>The mode argument can be &quot;r&quot;, &quot;rb&quot;, &quot;w&quot;, &quot;wb&quot;, &quot;x&quot;, &quot;xb&quot;, &quot;a&quot; or &quot;ab&quot; for
-binary mode, or &quot;rt&quot;, &quot;wt&quot;, &quot;xt&quot; or &quot;at&quot; for text mode. The default mode is
-&quot;rb&quot;, and the default compresslevel is 9.</p>
+<p>The mode argument can be “r”, “rb”, “w”, “wb”, “x”, “xb”, “a” or “ab” for
+binary mode, or “rt”, “wt”, “xt” or “at” for text mode. The default mode is
+“rb”, and the default compresslevel is 9.</p>
 <p>For binary mode, this function is equivalent to the GzipFile constructor:
 GzipFile(filename, mode, compresslevel). In this case, the encoding, errors
 and newline arguments must not be provided.</p>
@@ -428,10 +428,9 @@ behavior, and line ending(s).</p>
     </svg>
   </symbol>
 </svg></div>
-  </div><script src="../../_static/documentation_options.js?v=98e9f989"></script>
-  <script src="../../_static/doctools.js?v=9a2dae69"></script>
+  </div><script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=9bcbadda"></script>
   <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-  <script src="../../_static/translations.js?v=4dbe4bdc"></script>
   </body>
 
 </html>

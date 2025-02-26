@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="検索" href="../search.html" /><link rel="next" title="1.3.1.2. Usage - Markdown"
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="1.3.1.2. Usage - Markdown"
     href="usage_myst.html" /><link rel="prev" title="1.3. Usage"
     href="usage.html" />
 
-  <link rel="shortcut icon" href="../_static/favicon.ico" /><!-- Generated with Sphinx 7.3.7 -->
+  <link rel="shortcut icon" href="../_static/favicon.ico" /><!-- Generated with Sphinx 8.1.3 -->
   <title>1.3.1.1. Usage - NavTree - sphinx-theme-mochi</title>
-  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-  <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css?v=1e0347d5" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+  <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css?v=fcbd36f6" />
   </head>
 
 <body>
@@ -36,7 +36,7 @@
     <svg><use href="#svg-search"/></svg>
   </i>
   <form class="sidebar-search-form" method="get" action="../search.html" role="search">
-    <input class="sidebar-search" placeholder="検索" name="q" aria-label="検索">
+    <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
     <input type="hidden" name="check_keywords" value="yes">
     <input type="hidden" name="area" value="default">
   </form>
@@ -46,7 +46,7 @@
         <div id="sidebar-navtree" class="toc-tree">
           <p class="caption" role="heading"><span class="caption-text">Index</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">1. User's Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">1. User’s Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="setup.html">1.1. Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="customize.html">1.2. Customize</a></li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="usage.html">1.3. Usage</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Develop/index.html">2. Developer's Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Develop/index.html">2. Developer’s Manual</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Develop/overview.html">2.1. About</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Develop/publish.html">2.2. Publish</a></li>
 </ul>
@@ -172,25 +172,25 @@
 </div>
 <section id="directives">
 <h2><span class="section-number">1.3.1.1.1. </span>Directives<a class="headerlink" href="#directives" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree::</span></code> is a directive to build a toctree-cache and render toc in the page. The contents of sidebar navtree is generated from this toctree. It is advised to understand this directive.</p>
 <p><strong>caption (Text)</strong></p>
-<p>Set the title of the toctree. Title is printed above the toc (both page and navtree).</p>
+<p>Sets the title of the toctree. The title is printed above the toc (effective for both page and navtree). The title of nested toctree is ignored in the sidebar navigation.</p>
 <p><strong>numbered</strong></p>
 <p>Add chapter numbers to each section.</p>
 <p><strong>titlesonly</strong></p>
 <p>For each subdocuments, only the top level header is included in the toctree, and all subsections are ignored.</p>
-<p>Set this flag if you prefer simpler navtree (no subsections listed!). Don't set this flag if you want a complete list of headers.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">:titlesonly:</span></code> option must be used with care. When this option is set, The navtree becomes simple and looks better, but you will lose the complete toctree info. It also have the risk of having clumsy navtree. The nested toctrees inside the subsections are still discovered and merged to the parent. Avoid parent toctree with <code class="docutils literal notranslate"><span class="pre">:titlesonly:</span></code> + nested toctree directive in subsection.</p>
+<p>Set this flag if you prefer simpler navtree. (No subsections listed, effective for both page and navtree). Do not set this flag if you want a complete list of headers.</p>
+<p>The nested toctrees inside the subsections are still discovered and merged to the parent.</p>
 <p><strong>maxdepth (N)</strong></p>
 <p>Limits the toctree depth printed in the page. This value is ignored in the navtree. Check theme variable <code class="docutils literal notranslate"><span class="pre">mochi_navtree_maxdepth</span></code> for that purpose.</p>
 <p><strong>hidden</strong></p>
 <p>Hides this toctree from the page. This flag is ignored in the navtree.</p>
 <p><strong>etc</strong></p>
 <p>See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree">official documentation</a> for more.</p>
-</section>
-<section id="multiple-toctree">
-<h2><span class="section-number">1.3.1.1.2. </span>Multiple TocTree<a class="headerlink" href="#multiple-toctree" title="Link to this heading">#</a></h2>
-<p>By defining toctree multiple times, all contents are added to the sidebar navtree.</p>
-<p>Although this is useful, multiple toctree results in strage output when you use non-HTML output.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple toctrees are all included in the sidebar navtrees. However multiple toctree results in strage output when you use non-HTML output.</p>
+</div>
 </section>
 </section>
 <div class="related-pages">
@@ -227,7 +227,6 @@
             <ul>
 <li><a class="reference internal" href="#">1.3.1.1. Usage - NavTree</a><ul>
 <li><a class="reference internal" href="#directives">1.3.1.1.1. Directives</a></li>
-<li><a class="reference internal" href="#multiple-toctree">1.3.1.1.2. Multiple TocTree</a></li>
 </ul>
 </li>
 </ul>
@@ -262,10 +261,9 @@
     </svg>
   </symbol>
 </svg></div>
-  </div><script src="../_static/documentation_options.js?v=98e9f989"></script>
-  <script src="../_static/doctools.js?v=9a2dae69"></script>
+  </div><script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=9bcbadda"></script>
   <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-  <script src="../_static/translations.js?v=4dbe4bdc"></script>
   </body>
 
 </html>
