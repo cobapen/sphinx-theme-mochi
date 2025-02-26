@@ -156,6 +156,10 @@ table {
   td {
     padding: 0 .5rem;
     border: solid 1px #ccc;
+
+    > :first-child, :last-child {
+      margin: 0.25em;
+    }
   }
 }
 
