@@ -200,12 +200,16 @@ h1,h2,h3,h4,h5,h6 {
   background-color: rgba($admonition-color, 0.1);
   border: 1px solid $admonition-color;
   padding: 0;
+  margin-top: 0.5rem;
   border-radius: 0.25rem;
   max-width: var(--paragraph-width);
 
   &>.admonition-title {
     background-color: $admonition-color;
     color: $white;
+    font-size: 90%;
+    letter-spacing: 0.5px;
+    padding: 0.125rem 0.5rem;
   }
 
   &>p {
