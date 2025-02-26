@@ -5,7 +5,7 @@ sphinx-theme-mochi
 About
 ===========
 
-This is a developer's documentation for **sphinx-theme-mochi**
+This is a developer's documentation for **sphinx-theme-mochi**.
 
 For theme users: :doc:`Pages/index`
 
@@ -25,7 +25,7 @@ For developers: :doc:`Develop/index`
 Sample
 ==========
 
-Tree pages (:doc:`Sample/tree/page1`) constructs a nested navtree. 
+Tree pages (:doc:`Sample/tree/page1`) are examples of a nested navtree. 
 
 The :doc:`Sample/kitchen-sink/index` section contains pages that contains basically everything that you can with Sphinx "out-of-the-box".
 

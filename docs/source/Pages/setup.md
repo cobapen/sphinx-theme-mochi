@@ -2,33 +2,32 @@
 
 ## Instruction
 
-Install the theme and its dependencies.
-
 **Requirements**
 
     Python > 3.8
 
-Install sphinx and the theme
+**Installation**
+
+Install the theme
 
 ```sh
 python -m pip install sphinx
-python -m pip install sphinx_theme_mochi
+python -m pip install sphinx-theme-mochi
 ```
 
-Create the new project
+Create a new project
 
 ```sh
 sphinx-quickstart .
 ```
 
-Edit conf.py
-
+Edit conf.py to change the theme
 ```py
 # conf.py
-html_theme = 'sphinx_theme_mochi'  #changed
+html_theme = 'sphinx_theme_mochi'
 ```
 
-Add theme package to the extensions list
+Add the theme to the list of extensions.
 
 ```py
 extensions = [
@@ -36,7 +35,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'myst_parser',
-    'sphinx_theme_mochi',   # this
+    'sphinx_theme_mochi',
 ]
 ```
 
@@ -44,39 +43,41 @@ extensions = [
 
 ### build automation
 
+sphinx-autobuild watches local files and rebuilds the document when changed.
+
 ```sh
 python -m pip install sphinx-autobuild
 ```
 
-run, then open the browser (defaults to localhost:8000)
+run, then open the browser to preview (defaults to localhost:8000)
 
 ```sh
-sphinx-autobuild -E <source> <build/html>
+sphinx-autobuild <source> <build/html> -E
 # -E: fresh build (no-cache)
 ```
 
 
 ### markdown
 
-Install the markdown parser, and add to the extensions list.
+Add a markdown parser in the list of extensions for markdown syntax support. 
+[MyST-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) is a parser designed for Sphinx (and Docutils). 
 
 
 ```sh
-# markdown parser
 python -m pip install myst_parser
 ```
 
 ```py
 extensions = [
-    'myst_parser',          # this
+    'myst_parser',
 ]
 ```
 
 ### mathjax
 
-(TBD)
+Sphinx has math equation support for both html/non-html. For html output, sphinx can use image-renderer or mathjax-renderer for math rendering.
 
-Edit conf.py to set `mathjax_path` to the javascript URL. 
+To use mathjax renderer, add the mathjax extension to the extensions list, and set `mathjax_path` to the script. See [Official docs](https://www.sphinx-doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax) for details.
 
 ```py
 #conf.py
