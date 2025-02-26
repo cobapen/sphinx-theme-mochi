@@ -1,7 +1,7 @@
-@import "normalize";
-@import "core";
-@import "main";
-@import "sidebar";
-@import "scroll";
-@import "print";
-@import "style"
+@use "normalize";
+@use "core";
+@use "main";
+@use "sidebar";
+@use "scroll";
+@use "print";
+@use "style"
