@@ -300,10 +300,13 @@ table td {
   padding: 0 0.5rem;
   border: solid 1px #ccc;
 }
+table td > :first-child, table td :last-child {
+  margin: 0.25em;
+}
 
 code.docutils {
-  font-size: 0.875em;
-  padding: 0.1rem 0.5rem;
+  font-size: 0.9em;
+  padding: 0.125em 0.25em;
   border-radius: 5px;
   background-color: #f0f0f0;
 }
@@ -328,12 +331,16 @@ h1:hover a.headerlink, h2:hover a.headerlink, h3:hover a.headerlink, h4:hover a.
   background-color: rgba(0, 149, 217, 0.1);
   border: 1px solid #0095d9;
   padding: 0;
+  margin-top: 0.5rem;
   border-radius: 0.25rem;
   max-width: var(--paragraph-width);
 }
 .admonition > .admonition-title {
   background-color: #0095d9;
   color: #ffffff;
+  font-size: 90%;
+  letter-spacing: 0.5px;
+  padding: 0.125rem 0.5rem;
 }
 .admonition > p {
   margin: 0;
