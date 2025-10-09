@@ -7,6 +7,7 @@ This is a developer's documentation.
     :maxdepth: 1
 
     setup.md
+    release.md
     publish.md
     maintenance.md
 
