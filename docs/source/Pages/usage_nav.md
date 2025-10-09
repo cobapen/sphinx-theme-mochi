@@ -15,38 +15,43 @@
 
 ## Directives
 
-`.. toctree::` is a directive to build a toctree-cache and render toc in the page. The contents of sidebar navtree is generated from this toctree. It is advised to understand this directive.
+`.. toctree::` directive inserts a table-of-contents (toc) at that location. Sphinx organizes and structures the page hierarchy by building a "toctree". The theme's sidebar navtree is generated from this toctree, so it is strong advised to understand this directive.
+
+Sphinx manages all pages in a hierarchical structure. Each page has multiple level of headings, and the toctree directive organizes multiple documents by placing another document beneath the current level. By repeating this process, sphinx will manage all pages in a single "toctree". 
+
+A toctree directive can be used multiple times. It can be also nested. Sphinx merges all those information to a single global toctree. 
+
+Directive options will change the behavior and its output, but not the sidebar navtree generation. This may be unclear and confusing at first.
 
 **caption (Text)**
 
-Sets the title of the toctree. The title is printed above the toc (effective for both page and navtree). The title of nested toctree is ignored in the sidebar navigation. 
+Set a title of the toctree. The title is printed above the toc, for both page and the sidebar. The title of the nested toctree will be ignored in the sidebar. 
 
 **numbered**
 
-Add chapter numbers to each section.
+Add chapter numbers to each section name. 
 
 **titlesonly**
 
-For each subdocuments, only the top level header is included in the toctree, and all subsections are ignored. 
+For each subdocuments, only the top level header is included in the toctree.
 
-Set this flag if you prefer simpler navtree. (No subsections listed, effective for both page and navtree). Do not set this flag if you want a complete list of headers.
+Set this flag if you prefer simpler navtree. All subsections will be ignored. Do not set this flag if you want a complete list of headers in the toctree.
 
-The nested toctrees inside the subsections are still discovered and merged to the parent. 
+The nested toctrees inside the subsections are still discovered and merged to the parent. This may result to an inconsistent state.
 
 **maxdepth (N)**
 
-Limits the toctree depth printed in the page. This value is ignored in the navtree. Check theme variable `mochi_navtree_maxdepth` for that purpose.
+Limits the toctree depth inserted at that location. 
+
+This value has no effect on the sidebar navtree. Check theme variable `mochi_navtree_maxdepth` for that purpose.
 
 **hidden**
 
-Hides this toctree from the page. This flag is ignored in the navtree.
+Hide the TOC at that location (no rendering). 
 
+This option has no effect on the sidebar navtree. 
 
 **etc**
 
 See [official documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree) for more. 
 
-
-```{note}
-Multiple toctrees are all included in the sidebar navtrees. However multiple toctree results in strage output when you use non-HTML output. 
-```

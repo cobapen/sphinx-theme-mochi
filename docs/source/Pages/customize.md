@@ -14,7 +14,7 @@ Edit `conf.py` to customize the theme
 
 **`mochi_navtree_titlesonly`**: If True, only the first heading is included in the sidebar navtree. Defaults to False.
 
-**`mochi_navtree_maxdepth`**: Specifies the maxdepth of navtree. Defaults to -1 (unlimited)
+**`mochi_navtree_maxdepth`**: Limit the depth of sidebar navtree. Defaults to -1 (unlimited)
 
 
 ## Sample

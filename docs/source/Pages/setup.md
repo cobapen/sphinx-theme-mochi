@@ -27,7 +27,7 @@ Edit conf.py to change the theme
 html_theme = 'sphinx_theme_mochi'
 ```
 
-Add the theme to the list of extensions.
+Add this theme to the list of extensions.
 
 ```py
 extensions = [
@@ -35,7 +35,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'myst_parser',
-    'sphinx_theme_mochi',
+    'sphinx_theme_mochi', ###
 ]
 ```
 
@@ -49,17 +49,21 @@ sphinx-autobuild watches local files and rebuilds the document when changed.
 python -m pip install sphinx-autobuild
 ```
 
-run, then open the browser to preview (defaults to localhost:8000)
+Run, then open the browser to preview (defaults to localhost:8000)
 
 ```sh
-sphinx-autobuild <source> <build/html> -E
-# -E: fresh build (no-cache)
+sphinx-autobuild -E <source> <build/html>
+# -E: fresh build (no-cache). 
 ```
+
+The `-E` option forces sphinx to rebuild all pages per change. This slows down the build, but keeps the sidebar contents consistent across the pages.
+
+
 
 
 ### markdown
 
-Add a markdown parser in the list of extensions for markdown syntax support. 
+Add a markdown parser extension for markdown syntax support. 
 [MyST-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) is a parser designed for Sphinx (and Docutils). 
 
 
