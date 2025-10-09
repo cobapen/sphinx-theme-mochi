@@ -6,6 +6,7 @@ This is a developer's documentation.
 ..  toctree::
     :maxdepth: 1
 
-    overview.md
+    setup.md
     publish.md
+    maintainance.md
 
