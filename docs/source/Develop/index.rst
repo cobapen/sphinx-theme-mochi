@@ -8,5 +8,5 @@ This is a developer's documentation.
 
     setup.md
     publish.md
-    maintainance.md
+    maintenance.md
 
