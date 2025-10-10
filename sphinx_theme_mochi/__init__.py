@@ -1,5 +1,5 @@
 """ a simple, plain, solid sphinx theme """
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 
 from os import path
 from bs4 import BeautifulSoup as bs, Tag
